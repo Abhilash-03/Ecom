@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ecom</title>
+</head>
+<body class="bg-gray-200 text-black">
+<nav class="h-16 bg-gray-700 text-gray-100 px-5 py-3 flex items-center justify-between sticky top-0">
+    <a href="#" class="text-4xl font-serif font-bold"><span class="text-green-300">E</span>com</a>
+    <div class="input">
+        <input type="text" id="search-input" class="w-48 md:w-96 h-10 rounded-full px-4 py-2 bg-gray-800 text-gray-200 font-serif text-lg outline-none shadow-lg" placeholder="Search items...">
+    </div>
+</nav>
+
+<!-- product listing -->
+ <section class="product-section">
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" id="list">
+        <li class="shadow-xl max-w-[400px] flex flex-col items-center py-5 rounded-lg mx-10 my-10 bg-white">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="image" class="w-[300px] h-[250px] shadow-xl rounded-2xl">
+            <div class="dtls mt-4 space-y-2">
+                <h3 class="lg:text-2xl text-lg px-3 font-serif font-semibold">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h3>
+                <p class="text-xl text-wrap px-3 font-serif font-semibold">Price: <span>$109.95</span></p>
+            </div>
+        </li>
+    </ul>
+ </section>
+
+ <script src="js/app.js"></script>
+</body>
+</html>
