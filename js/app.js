@@ -10,9 +10,13 @@ const getProducts = async() => {
 
     // search the product with keywords
     search.addEventListener('input', () => {
+        const searchTerm = search.value.toLowerCase()
         if(search.value.trim().length > 3){
           const filteredProduct =  data.filter(product => (
-                product.title.toLowerCase().includes(search.value.toLowerCase())
+               ( 
+                product.title.toLowerCase().includes(searchTerm) || 
+                product.description.toLowerCase().includes(searchTerm)
+                )
             ))
                 if(filteredProduct.length > 0){
                     // rendering searched products
